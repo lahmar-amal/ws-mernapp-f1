@@ -1,0 +1,30 @@
+{
+    "name": "ws-restapi-f1",
+    "version": "1.0.0",
+    "description": "contact-list",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "front": "cd client && npm start",
+        "back": "nodemon server",
+        "dev": "concurrently \"npm run back\" \"npm run front\""
+    },
+    "keywords": [
+        "express",
+        "mongoose",
+        "node",
+        "restapi"
+    ],
+    "author": "amal lahmar",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "mongoose": "^6.1.6"
+    },
+    "devDependencies": {
+        "dotenv": "^11.0.0",
+        "nodemon": "^2.0.15"
+    }
+}
